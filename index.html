@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="height=device-height">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/static.css">
+        <link rel="stylesheet" href="css/respond.css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- Start HTML -->
+        <div data-role='page' id='homePage'>
+            <a href='#gamePage' data-transition="slide">
+                <div class='playHotSpot'>
+                </div>
+            </a>
+            <a href='#instructions' data-transition="slide">
+                <div class='questionHotSpot'>
+                </div>
+            </a>
+        </div>
+        <div data-role="page" id="gamePage">
+            <div class='gameInfoBlackScreen'></div>
+            <div class='gameInfoScreen fdg-xxs-12'>
+                <div class='levelBanner fdg-xxs-12'>
+                    <span class='level'>
+                        Level
+                    </span>
+                    <span class='levelNumber'></span>
+                </div>
+                <div class='movesBanner fdg-xxs-12'>
+                    <span class='gameInfoText'>
+                        Moves: 
+                    </span>
+                    <span class='movesNumber'></span>
+                </div>
+                <div class='timeBanner fdg-xxs-12'>
+                    <span class='gameInfoText'>
+                        Time: 
+                    </span>
+                    <span class='timeNumber'></span>
+                </div>
+                <div class='endBanner fdg-xxs-12'>
+                    <span class='gameInfoText'>
+                        End On: 
+                    </span>
+                    <span class='endChar'></span>
+                </div>
+                <img class="blackbutton playButton" src="img/playbutton.png">
+                <a href="#homePage" data-transition="slide" data-direction="reverse">
+                    <img class="blackbutton" src="img/menubutton.png">
+                </a>
+            </div>
+            <div class='winScreen fdg-xxs-12'>
+                <img class="blackbutton nextButton" src="img/next.png">
+                <a href="#homePage" data-transition="slide" data-direction="reverse">
+                    <img class="blackbutton winMenu" src="img/menubutton.png">
+                </a>
+            </div>
+            <div class='loseScreen fdg-xxs-12'>
+                <img class="blackbutton nextButton" src="img/next.png">
+                <a href="#homePage" data-transition="slide" data-direction="reverse">
+                    <img class="blackbutton winMenu" src="img/menubutton.png">
+                </a>
+            </div>
+            <div class='head fdg-xxs-12 fdg-xxs-mar-auto'>
+                <div class= 'controlPanel fdg-xxs-12'>
+                    <div class='fdg-xxs-4 controlPanelButton'>
+                        <a href="#homePage" data-transition="slide" data-direction="reverse">
+                            <img class='back' src="img/back.png">
+                        </a>
+                    </div>
+                    <div class='fdg-xxs-4 controlPanelButton'><img class='reset' src="img/refresh.png"></div>
+                    <div class='fdg-xxs-4 controlPanelButton'><img class='pause' src="img/pause.png"></div>
+                </div>
+                <div class='gameSpecsTextBanner fdg-xxs-12'>
+                    <div class='gameSpecsText fdg-xxs-6'>
+                        MOVES
+                    </div>
+                    <div class='gameSpecsText gameSpecsTextTime fdg-xxs-6'>
+                        TIME
+                    </div>
+                </div>
+                <div class="gameSpecBanner">
+                    <div class='title fdg-xxs-6'></div>
+                    <div class='timer fdg-xxs-6'></div>    
+                </div>        
+            </div>
+            <div class='gameBox fdg-xxs-12 fdg-xs-6 fdg-xxs-mar-auto'>
+                <div class='row row1'>
+                    <div class='box 1 connect'></div>
+                    <div class='box 2'></div>
+                    <div class='box 3'></div>
+                    <div class='box 4'></div>
+                    <div class='box 5'></div>
+                    <div class='box 6'></div>
+                    <div class='box 7'></div>
+                    <div class='box 8'></div>
+                    <div class='box 9'></div>
+                    <div class='box 10'></div>
+                </div>
+                <div class='row row2'>
+                    <div class='box 11'></div>
+                    <div class='box 12'></div>
+                    <div class='box 13'></div>
+                    <div class='box 14'></div>
+                    <div class='box 15'></div>
+                    <div class='box 16'></div>
+                    <div class='box 17'></div>
+                    <div class='box 18'></div>
+                    <div class='box 19'></div>
+                    <div class='box 20'></div>
+                </div>
+                <div class='row row3'>
+                    <div class='box 21'></div>
+                    <div class='box 22'></div>
+                    <div class='box 23'></div>
+                    <div class='box 24'></div>
+                    <div class='box 25'></div>
+                    <div class='box 26'></div>
+                    <div class='box 27'></div>
+                    <div class='box 28'></div>
+                    <div class='box 29'></div>
+                    <div class='box 30'></div>
+                </div>
+                <div class='row row4'>
+                    <div class='box 31'></div>
+                    <div class='box 32'></div>
+                    <div class='box 33'></div>
+                    <div class='box 34'></div>
+                    <div class='box 35'></div>
+                    <div class='box 36'></div>
+                    <div class='box 37'></div>
+                    <div class='box 38'></div>
+                    <div class='box 39'></div>
+                    <div class='box 40'></div>
+                </div>
+                <div class='row row5'>
+                    <div class='box 41'></div>
+                    <div class='box 42'></div>
+                    <div class='box 43'></div>
+                    <div class='box 44'></div>
+                    <div class='box 45'></div>
+                    <div class='box 46'></div>
+                    <div class='box 47'></div>
+                    <div class='box 48'></div>
+                    <div class='box 49'></div>
+                    <div class='box 50'></div>
+                </div>
+                <div class='row row6'>
+                    <div class='box 51'></div>
+                    <div class='box 52'></div>
+                    <div class='box 53'></div>
+                    <div class='box 54'></div>
+                    <div class='box 55'></div>
+                    <div class='box 56'></div>
+                    <div class='box 57'></div>
+                    <div class='box 58'></div>
+                    <div class='box 59'></div>
+                    <div class='box 60'></div>
+                </div>
+                <div class='row row7'>
+                    <div class='box 61'></div>
+                    <div class='box 62'></div>
+                    <div class='box 63'></div>
+                    <div class='box 64'></div>
+                    <div class='box 65'></div>
+                    <div class='box 66'></div>
+                    <div class='box 67'></div>
+                    <div class='box 68'></div>
+                    <div class='box 69'></div>
+                    <div class='box 70'></div>
+                </div>
+                <div class='row row8'>
+                    <div class='box 71'></div>
+                    <div class='box 72'></div>
+                    <div class='box 73'></div>
+                    <div class='box 74'></div>
+                    <div class='box 75'></div>
+                    <div class='box 76'></div>
+                    <div class='box 77'></div>
+                    <div class='box 78'></div>
+                    <div class='box 79'></div>
+                    <div class='box 80'></div>
+                </div>
+                <div class='row row9'>
+                    <div class='box 81'></div>
+                    <div class='box 82'></div>
+                    <div class='box 83'></div>
+                    <div class='box 84'></div>
+                    <div class='box 85'></div>
+                    <div class='box 86'></div>
+                    <div class='box 87'></div>
+                    <div class='box 88'></div>
+                    <div class='box 89'></div>
+                    <div class='box 90'></div>
+                </div>
+                <div class='row row10'>
+                    <div class='box 91'></div>
+                    <div class='box 92'></div>
+                    <div class='box 93'></div>
+                    <div class='box 94'></div>
+                    <div class='box 95'></div>
+                    <div class='box 96'></div>
+                    <div class='box 97'></div>
+                    <div class='box 98'></div>
+                    <div class='box 99'></div>
+                    <div class='box 100'></div>
+                </div>
+            </div>
+            <div class="colorPicker gameOn fdg-xxs-12 fdg-xxs-mar-auto">
+                <div class="option option1 char"></div>
+                <div class="option option2 char"></div>
+                <div class="option option3 char"></div>
+                <div class="option option4 char"></div>
+                <div class="option option5 char"></div>
+            </div>
+        </div>
+        <div data-role='page' id='instructions'>
+        <a href = '#homePage'data-transition="slide" data-direction="reverse"><div class="instructionsPage"></div></a> 
+        </div>
+        <!-- End HTML -->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

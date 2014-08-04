@@ -1,0 +1,204 @@
+/*XXS*/
+@media (max-width:479px){
+body{
+	background: #66FF00;
+}
+.row{
+	float:left;
+}
+.gameBox{
+	width:320px;
+	height:320px;
+	margin-bottom: 20px;
+}
+.title{
+	float: left;
+	font-size:22.5px;
+	height:22.5px;
+}
+.timer{
+	float: left;
+	font-size:22.5px;
+	height:22.5px;
+	text-align: right;
+}
+.reset{
+	height: 45px;
+	font-size: 45px;
+}
+.colorPicker{
+	width:320px;
+	height:64px;
+	background-color: rgba(255,255,255,.3);
+}
+.option{
+	height: 60px;
+	width: 60px;
+}
+.head{
+	width:320px;
+	height:80px;
+	margin-bottom: 30px;
+}
+.controlPanel{
+	height:45px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.controlPanelButton{
+	height:45px;
+	float:left;
+	text-align: center;
+}
+.controlPanelButton img{
+	height: 55px;
+	width: 60px;
+}
+.gameSpecsTextBanner{
+	height:22.5px;
+}
+.gameSpecsText{
+	font-size:22.5px;
+	height:22.5px;
+	float:left;
+	text-shadow:39px 0px 55px -12px rgba(0,0,0,0.6);
+}
+.gameSpecBanner{
+	height:22.5px;
+}
+.gameSpecsTextTime{
+	text-align: right;
+}
+.playHotSpot{
+	height: 90px;
+	width: 90px;
+	position: absolute;
+	top: 305px;
+	left: 25px;
+}
+.questionHotSpot{
+	height: 90px;
+	width: 90px;
+	position: absolute;
+	top: 355px;
+	left: 175px;
+}
+.gameInfoScreen, .winScreen, .loseScreen{
+	text-align: center;
+	margin-top: 100px;
+}
+.levelBanner{
+	font-size: 72px;
+	margin-bottom:40px;
+}
+.gameInfoText, .movesNumber, .timeNumber, .endChar{
+	font-size: 30px;
+}
+.movesBanner, .timeBanner, .endBanner{
+	margin-bottom: 15px;
+}
+.instructionsPage{
+	width:310px;
+	height:550px;
+}
+.blackbutton{
+	height:70px;
+}
+}
+/*XS*/
+@media (min-width:480px) and (max-width:639px){
+body{
+	background-color: #66FF33;
+}
+.gameBox{
+	width:300px;
+	height:300px;
+}
+.colorPicker{
+	width:300px;
+}
+.option{
+	height:60px;
+	width:60px;
+}
+}
+/*S*/
+@media (min-width:640px) and (max-width:767px){
+body{
+	background-color: #66FF66;
+}
+.gameBox{
+	width:540px;
+	height:540px;
+}
+.colorPicker{
+	width:540px;
+}
+.option{
+	height:108px;
+	width:108px;
+}
+}
+/*M*/
+@media (min-width:768px) and (max-width:959px){
+body{
+	background-color: #66FF99;
+}
+.gameBox{
+	width:540px;
+	height:540px;
+}
+.colorPicker{
+	width:540px;
+}
+.option{
+	height:108px;
+	width:108px;
+}
+}
+/*L*/
+@media (min-width:960px) and (max-width:1399px){
+body{
+	background-color: #66FFCC;
+}
+.gameBox{
+	width:540px;
+	height:540px;
+}
+.colorPicker{
+	width:540px;
+}
+.option{
+	height:108px;
+	width:108px;
+}
+}
+/*XL*/
+@media (min-width:1400px){
+body{
+	background-color: #66FFFF;
+}
+.gameBox{
+	width:540px;
+	height:540px;
+}
+.colorPicker{
+	width:540px;
+}
+.option{
+	height:108px;
+	width:108px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+.ui-overlay-a, .ui-page-theme-a{
+	background: transparent;
+	background-size: 100%;
+	text-shadow: 1px 1px 1px gray;
+	overflow:hidden;
+}
+#gamePage{
+	background-image: url('../img/jungleBG.png') !important;
+}
+#homePage{
+	background-image: url('../img/homepage.png') !important;
+}
+#instructions{
+	background-image: url('../img/instructions.jpg') !important;
+}
+.title{
+	font-size: 80px;
+}
+.head{
+	color:#5bc9c6;
+}
+.gameBox{
+
+}
+.box{
+	width:10%;
+	height:100%;
+	float:left;
+}
+.row{
+	width:100%;
+	height:10%;
+}
+.colorPicker{
+
+}
+.option1{
+	background: url('../img/tiger.png');
+}
+.option2{
+	background: url('../img/bear.png');
+}
+.option3{
+	background: url('../img/snake.png');
+}
+.option4{
+	background: url('../img/elephant.png');
+}
+.option5{
+	background: url('../img/shark.png');
+}
+.option{
+	height:20%;
+	width:20%;
+	float:left;
+	cursor: pointer;
+	background-size: cover;
+}
+.tiger{
+	background: url('../img/tiger.png');
+	background-color: rgba(1,0,0,0);
+	background-size: cover;
+}
+.bear{
+	background: url('../img/bear.png');
+	background-color: rgba(2,0,0,0);
+	background-size: cover;
+}
+.snake{
+	background: url('../img/snake.png');
+	background-color: rgba(3,0,0,0);
+	background-size: cover;
+}
+.elephant{
+	background: url('../img/elephant.png');
+	background-color: rgba(4,0,0,0);
+	background-size: cover;
+}
+.shark{
+	background: url('../img/shark.png');
+	background-color: rgba(5,0,0,0);
+	background-size: cover;
+}
+.gameInfoBlackScreen{
+	position: absolute;
+	background-color: black;
+	opacity: .7;
+	width:100%;
+	height:100%;
+	z-index: 1;
+}
+.gameInfoScreen{
+	position: absolute;
+	z-index: 2;
+	color:#dffcff;
+}
+.playHotSpot{
+	background: url('../img/play.png');
+	background-size: 100%;
+}.questionHotSpot{
+	background: url('../img/question.png');
+	background-size: 100%;
+}
+.winScreen, .loseScreen{
+	display: none;
+	position: absolute;
+	z-index: 2;
+}
+.char{
+	margin: 2px 2px 2px 0px;
+}
+.char3{
+	margin: 2px 2px 2px 60px;
+}
+.char4{
+	margin: 2px 2px 2px 37px;
+}
